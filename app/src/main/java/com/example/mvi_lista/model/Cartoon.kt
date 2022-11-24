@@ -1,7 +1,7 @@
 package com.example.mvi_lista.model
 
-data class Animal (
+data class Cartoon (
     val name: String="",
-    val location: String = "",
+    val lastLocation: String = "",
     val image: String = ""
 )
