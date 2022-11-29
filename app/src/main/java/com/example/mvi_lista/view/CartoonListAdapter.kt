@@ -8,6 +8,7 @@ import com.bumptech.glide.Glide
 import com.example.mvi_lista.R
 import com.example.mvi_lista.api.CartoonService
 import com.example.mvi_lista.model.Cartoon
+import kotlinx.android.synthetic.main.cartoon_item.view.*
 
 /* 1) Hereda de la clase adapter de un RecyclerView OJO
  * 2) Es obligatorio el patrón View Holder

@@ -8,7 +8,7 @@ sealed class MainState {
     object Idle: MainState()
     object Loading: MainState()
     //El estado cuando se obtienen los personajes de manera exitosa
-    data class Animals(val cartoons: List<Cartoon>): MainState()
+    data class Cartoons(val cartoons: List<Cartoon>): MainState()
     //Cuando no se obtiene lños personajes de manera exitosa
     data class Error(val error: String?):MainState()
 }

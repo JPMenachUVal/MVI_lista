@@ -10,4 +10,6 @@ object CartoonService {
         .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
+
+    val api: CartoonApi = getRetrofit().create(CartoonApi::class.java)
 }
