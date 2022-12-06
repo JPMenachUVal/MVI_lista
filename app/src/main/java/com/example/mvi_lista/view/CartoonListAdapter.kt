@@ -18,6 +18,14 @@ import kotlinx.android.synthetic.main.cartoon_item.view.*
 class CartoonListAdapter(private val cartoons: List<Cartoon>):
 RecyclerView.Adapter<CartoonListAdapter.DataViewHolder>(){
 
+    //Método forzado para explicar las actualizaciones del adapter
+    fun newCartoons(newCartoons: List<Cartoon>){
+        cartoons.clear()
+        cartoons.addAll(newCartoons)
+        //Método que redibuja los elementos sin tener que volver a abrir la aplicación
+        notifyDataSetChanged()
+    }
+
     //Patrón ViewHolder para el adapter
     // necesitas una referencia de la View o Layout a mapear
     // Es necesario heredar de ViewHolder

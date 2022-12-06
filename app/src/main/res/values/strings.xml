@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MVI_lista</string>
+    <string name="btn_cartoon">Fetch Cartoons</string>
 </resources>
